@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>noticias</title>
+</head>
+<body>
+    <header>
+        <h1>Noticias de Samsung</h1>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="slide active">
+                <img src="{{ url_for('static', filename='images/not1.png') }}" alt="Samsung Logo">
+                <h2>Samsung Electronics</h2>
+                <p>Samsung Electronics Latinoamerica amplia su newsroom para incluir a Paraguay y Uruguay.</p>
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static', filename='images/not2.png') }}" alt="smarthome">
+                <h2>Smart Home</h2>
+                <p>Llega a Panama la nueva lavadora secadora con IA de Samsung que define el hogar del futuro.</p>
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static', filename='images/not3.png') }}" alt="smarthome">
+                <h2>Galaxy</h2>
+                <p>Muchas razones por las cuales comprar el Galaxy Tab S10.</p>
+            </div>
+        </section>
+        <button id="prev" class="nav-button">← Anterior</button>
+        <button id="next" class="nav-button">Siguiente →</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

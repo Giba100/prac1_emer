@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    
+    <header>
+        <div class="slide">
+            <img src="{{ url_for('static', filename='images/logoo.png') }}" alt="logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('inicio') }}">Inicio</a></li>
+                <li><a href="{{ url_for('quienes_somos') }}">Quiénes Somos</a></li>
+                <li><a href="{{ url_for('servicios') }}">Servicios</a></li>
+                <li><a href="{{ url_for('noticias') }}">Noticias</a></li>
+                <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Bienvenido a SAMSUNG</h2>
+       
+        <div class="slide">
+            <img src="{{ url_for('static', filename='images/bienvenido.jpg') }}" alt="smarthome">
+            <p>Dispositivos móviles que marcan la diferencia.</p>
+        </div>
+       
+        <p>Nuestra promesa consiste en trabajar con responsabilidad como una empresa líder a nivel mundial.
+        </p>
+    </section>
+    
+
+    <section>
+        <h3>Nuestras Ventajas</h3>
+        <ul>
+            <li>Alta calidad</li>
+            <li>Soporte 24/7</li>
+            <li>Precios accesibles</li>
+        </ul>
+    </section>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Redes sociales: 
+            <a href="https://www.facebook.com/Samsung" target="_blank">
+                <button>Facebook</button>
+            </a> 
+            <a href="https://twitter.com/Samsung" target="_blank">
+                <button>Twitter</button>
+            </a> 
+            <a href="https://www.instagram.com/samsung" target="_blank">
+                <button>Instagram</button>
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

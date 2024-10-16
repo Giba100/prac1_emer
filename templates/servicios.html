@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Servicios de Samsung</title>
+</head>
+<body>
+    <header>
+        <h1>Servicios de Samsung</h1>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="slide active">
+                <img src="{{ url_for('static', filename='images/Samsung_logo.jpg') }}" alt="Samsung Logo">
+                <h2>Samsung Electronics</h2>
+                <p>Innovaciones en electrónica de consumo.</p>
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static', filename='images/smarthome.jpg') }}" alt="smarthome">
+                <h2>Smart Home</h2>
+                <p>Conectividad y control para tu hogar inteligente.</p>
+            </div>
+            <div class="slide">
+                <img src="{{ url_for('static', filename='images/galaxy.webp') }}" alt="smarthome">
+                <h2>Galaxy</h2>
+                <p>Dispositivos móviles que marcan la diferencia.</p>
+            </div>
+        </section>
+        <button id="prev" class="nav-button">← Anterior</button>
+        <button id="next" class="nav-button">Siguiente →</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

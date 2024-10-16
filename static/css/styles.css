@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1E90FF;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Color dorado al pasar el mouse */
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1rem;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer p a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+.imagenes {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+.imagenes img {
+    width: 45%; /* Ajusta el tamaño de las imágenes */
+    margin: 0 10px; /* Espaciado entre imágenes */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+        /* Agregamos un estilo para centrar el logotipo */
+.logo {
+     display: block;
+     margin: 0 auto;
+     width: 150px; /* Puedes ajustar el tamaño del logotipo según tus necesidades */
+        }
+
+header h1 {
+    text-align: center;
+        }
+    
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
